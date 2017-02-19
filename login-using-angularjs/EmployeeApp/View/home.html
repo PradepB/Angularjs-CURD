@@ -1,0 +1,25 @@
+﻿<div class="container">
+
+    <h1>Employee</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>F_Name</th>
+                <th>L_Name</th>
+                <th>Address</th>
+            </tr>
+  
+        </thead>
+        <tr ng-repeat="a in emps">
+            <td>{{a.Id}}</td>
+            <td>{{a.F_Name}}</td>
+            <td>{{a.L_Name}}</td>
+            <td>{{a.Address}}</td>
+
+        </tr>
+    </table>
+    <br />
+    <br />
+    <br />
+</div>

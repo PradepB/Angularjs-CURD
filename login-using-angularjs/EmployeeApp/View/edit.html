@@ -1,0 +1,55 @@
+﻿
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-3">
+            <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    {{selectedItem}}
+                    <span class="caret">
+                        </span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li ng-repeat="a in emps">
+                                <a ng-click="dropboxitemselected(a)">
+                                    {{a.Id}}</a></li>
+</ul>
+                                    </div>
+
+            </div>
+
+            <div class="col-md-3">
+                <form ng-show="isDeleteItemVisible">
+                    <table>
+
+
+
+                        <tr>
+                            <td>
+                                <lable>F_Name <b> :</b></lable>
+                                <input type="text" ng-model="name" style="margin-left:-3PX;" />
+                            </td>
+
+                        </tr>
+                        <tr>
+
+                            <td>
+                                <lable>L_Name <b> :</b></lable>
+                                <input type="text" ng-model="lname" style="margin-left: -1%;" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <lable>Address <b> :</b></lable>
+                                <input type="text" ng-model="address" />
+                            </td>
+                        </tr>
+                    </table>
+                    <br />
+                    <button type="submit" ng-click="updateEmp() " style="padding: 5px;margin-left: 4.8%;">Update</button>
+                </form>
+            </div>
+        </div>
+
+</div>
